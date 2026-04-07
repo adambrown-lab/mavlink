@@ -2779,6 +2779,16 @@
         <param index="6">Empty.</param>
         <param index="7">Empty.</param>
       </entry>
+      <entry value="32001" name="MAV_CMD_DCAM" hasLocation="false" isDestination="false">
+        <description>Command to control a DCAM linear actuator via PWM signal. Used to open or close the actuator by specifying the servo instance and PWM value.</description>
+        <param index="1" label="Servo Instance" minValue="1" increment="1">Servo instance number (1-based index of the servo/actuator to control).</param>
+        <param index="2" label="PWM Value" units="us" minValue="0" maxValue="65535">PWM signal value in microseconds (e.g. 1000=fully closed, 2000=fully open).</param>
+        <param index="3">Empty.</param>
+        <param index="4">Empty.</param>
+        <param index="5">Empty.</param>
+        <param index="6">Empty.</param>
+        <param index="7">Empty.</param>
+      </entry>
     </enum>
     <enum name="MAV_DATA_STREAM">
       <superseded since="2015-06" replaced_by="MESSAGE_INTERVAL"/>
